@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box {
+            text-align: center;
+            width: 600px;
+            height: 250px;
+            border-radius:25px;
+            border-color: black;
+            margin-left: 460px;
+            margin-top: 200px;
+            margin-right: 100px;
+            box-shadow: 2px 18px 119px -26px rgba(0,0,0,0.57);
+            font-family: Arial, Helvetica, sans-serif;
+            
+            }
+            h1{
+                padding-top: 30px;
+                font-size: 35px;
+
+            }
+            button{
+                margin-top: 25px;
+                width:15%;
+                height: 20%;
+                color: white;
+                border-radius: 10px;
+                background-color: rgb(77, 173, 77);
+                border-color: white;
+                font-size: 18px;
+                margin-right: 15px;
+              }
+              input[type="number"]
+              {
+                width: 25%;
+                height: 15%;
+                margin-right: 25px;
+
+              }
+    </style>
+    
+
+</head>
+<body>
+    <script>
+        function add()
+        {
+            var n1=document.getElementById("num1").value;
+            var n2=document.getElementById("num2").value;
+            var sum=(parseInt(n1)+parseInt(n2));
+
+            document.write(sum);
+
+        }
+        function sub()
+        {
+            var n1=document.getElementById("num1").value;
+            var n2=document.getElementById("num2").value;
+            var sub=(parseInt(n1)-parseInt(n2));
+            document.write(sub);
+
+        }
+        function div()
+        {
+            var n1=document.getElementById("num1").value;
+            var n2=document.getElementById("num2").value;
+            var div=(parseInt(n1)/parseInt(n2));
+            document.write(div);
+
+        }
+        function mul()
+        {
+            var n1=document.getElementById("num1").value;
+            var n2=document.getElementById("num2").value;
+            var mul=(parseInt(n1)*parseInt(n2));
+            document.write(mul);
+
+        }
+</script>
+
+    
+     <div class="box">
+         <h1>Simple Calucator</h1>
+         <input type="number" placeholder="Enter first number" id="num1">
+         <input type="number" placeholder="Enter second number" id="num2"><br>
+         <button type="button" onclick="add()">Add</button>    
+         <button type="button" onclick="sub()">Subtract</button>  
+         <button type="button" onclick="div()">Divide</button>    
+         <button type="button"onclick="mul()">Multiple</button> 
+     </div>
+
+     
+      
+</body>
+</html>
